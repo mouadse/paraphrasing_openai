@@ -1,0 +1,4 @@
+openai~=0.27.1
+pyperclip~=1.8.2
+Flask~=2.2.3
+asgiref~=3.6.0

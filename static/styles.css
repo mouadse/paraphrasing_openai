@@ -1,0 +1,33 @@
+body {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode-toggle {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-label {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.toggle-input:checked + .toggle-label {
+    background-color: #333;
+    color: #fff;
+}
