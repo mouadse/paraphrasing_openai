@@ -10,10 +10,17 @@ openai.api_key = OPENAI_API_KEY
 
 
 async def rewrite_text(input_text):
-    # prompt = (f"Please rewrite the following text: \n\n{input_text}\n\nRewritten text:")
+    prompt = f"Please do the following task and format it as a code in markdown language: \n\n{input_text}\n\nRewritten text:"
     response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[
         {"role": "user", "content": f"Please rewrite the following text: {input_text}"}])
     return response.choices[0].message.content
+    # response = openai.Completion.create(
+    #     model="text-davinci-003",
+    #     prompt=prompt,
+    #     max_tokens=40,
+    #     temperature=0
+    # )
+    # return response.choices[0].text
 
 
 app = Flask(__name__)

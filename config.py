@@ -1,2 +1,2 @@
 # Insert your API key here
-OPENAI_API_KEY = "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+OPENAI_API_KEY = "sk-xxxxxxxx"
